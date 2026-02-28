@@ -30,67 +30,23 @@ img {
   display: block;
 }
 
-/* Banner Header — matches original rockbridgefarm.com design */
+/* Banner Header — the original banner image contains the title and nav text */
 .site-banner {
-  position: relative;
   width: 100%;
-  min-height: 340px;
   background-color: #4a6a3a;
-  background-image: url('../images/header-banner.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
 }
 
-.site-banner .banner-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(30, 50, 20, 0.3);
-}
-
-.site-banner .banner-content {
-  position: relative;
-  z-index: 1;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 1rem;
-  text-align: center;
-}
-
-.site-banner .logo {
-  width: 80px;
-  height: auto;
-  margin: 0 auto 0.75rem;
-  filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.4));
-}
-
-.site-banner h1 {
-  font-size: 3rem;
-  font-weight: normal;
-  color: #fff;
-  letter-spacing: 0.12em;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-  margin-bottom: 0.25rem;
-}
-
-.site-banner .tagline {
-  font-style: italic;
-  font-size: 1.05rem;
-  color: #e0e8d0;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-}
-
-/* Banner Navigation — inline links separated by middots */
-.banner-nav {
-  position: relative;
-  z-index: 1;
-  background: rgba(40, 60, 25, 0.8);
+.site-banner .banner-image {
   width: 100%;
-  padding: 0.6rem 1rem;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Navigation bar — functional links matching the text in the banner image */
+.banner-nav {
+  background-color: #5a6b4a;
+  width: 100%;
+  padding: 0.5rem 1rem;
   text-align: center;
 }
 
@@ -118,7 +74,7 @@ img {
   text-decoration: none;
   font-size: 0.9rem;
   letter-spacing: 0.04em;
-  padding: 0.25rem 0.1rem;
+  padding: 0.2rem 0.1rem;
   transition: color 0.2s;
 }
 
@@ -289,14 +245,6 @@ img {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .site-banner {
-    min-height: 240px;
-  }
-
-  .site-banner h1 {
-    font-size: 2rem;
-  }
-
   .banner-nav a {
     font-size: 0.78rem;
   }
