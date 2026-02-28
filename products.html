@@ -3,42 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Products - Rockbridge Farm</title>
-  <meta name="description" content="Rockbridge Farm offers all natural yarns, socks, roving, fleeces, and horns from our humanely-raised sheep.">
+  <title>Rockbridge Farm</title>
+  <meta name="description" content="Rockbridge Farm offers fleeces, yarn, blankets, and other wool products from our humanely-raised sheep.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <h1>Rockbridge Farm</h1>
-    <p class="tagline">York County, Pennsylvania</p>
+  <header class="site-banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <img src="images/logo.png" alt="Rockbridge Farm logo" class="logo">
+      <h1>Rockbridge Farm</h1>
+      <p class="tagline">York County, Pennsylvania</p>
+    </div>
+    <nav class="banner-nav">
+      <ul>
+        <li><a href="sheep.html#bwm">Black Welsh Mountain Sheep</a></li>
+        <li><a href="sheep.html#romney">Romney Sheep</a></li>
+        <li><a href="sheep.html#boergoats">Boer Goats</a></li>
+        <li><a href="#fleeces">Fleeces</a></li>
+        <li><a href="#yarn">Yarn</a></li>
+        <li><a href="#blankets">Blankets</a></li>
+      </ul>
+    </nav>
   </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="sheep.html">Our Sheep</a></li>
-      <li><a href="products.html" class="active">Products</a></li>
-    </ul>
-  </nav>
 
   <main class="content">
 
     <h2>Products</h2>
 
-    <p>Rockbridge Farm offers a variety of sheep and wool products, including all natural
-    items from our <a href="sheep.html">Black Welsh Mountain and Romney flocks</a>.</p>
+    <p>Rockbridge Farm offers a variety of sheep and wool products from our
+    <a href="sheep.html">Black Welsh Mountain and Romney flocks</a>.</p>
 
-    <img src="images/products.svg" alt="Rockbridge Farm wool products - yarn, socks, fleece, and horns" style="margin-bottom: 1.5rem;">
+    <div id="fleeces" class="breed-section">
+      <h3>Fleeces</h3>
+      <p>We offer raw and washed fleeces from both our Black Welsh Mountain and Romney
+      flocks. Black Welsh Mountain fleeces are completely black, dense, and durable &mdash;
+      prized by hand spinners. Romney fleeces are heavy and thick, known for being
+      easy to spin and ideal for a wide range of fiber arts projects.</p>
+    </div>
 
-    <h3>Available Products</h3>
-    <ul class="products-list">
-      <li>All Natural Yarns</li>
-      <li>Socks</li>
-      <li>Roving</li>
-      <li>Fleeces</li>
-      <li>Horns</li>
-    </ul>
+    <div id="yarn" class="breed-section">
+      <h3>Yarn</h3>
+      <p>Our all natural yarns are produced from the wool of our own sheep. Each skein
+      reflects the character of the breed it came from &mdash; the rich dark tones of
+      Black Welsh Mountain wool or the versatile natural shades of Romney.</p>
+    </div>
+
+    <div id="blankets" class="breed-section">
+      <h3>Blankets</h3>
+      <p>Warm, durable blankets made from the natural wool of our flock. These blankets
+      showcase the quality and character of wool raised right here on the farm.</p>
+    </div>
 
     <p>Please call for availability and we will be happy to ship to you.</p>
 

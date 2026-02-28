@@ -3,36 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Sheep - Rockbridge Farm</title>
-  <meta name="description" content="Rockbridge Farm is home to Black Welsh Mountain sheep and Romney sheep. One of only about fifty registered Black Welsh Mountain flocks in the country.">
+  <title>Rockbridge Farm</title>
+  <meta name="description" content="Rockbridge Farm is home to Black Welsh Mountain sheep, Romney sheep, and Boer Goats. One of only about fifty registered Black Welsh Mountain flocks in the country.">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <h1>Rockbridge Farm</h1>
-    <p class="tagline">York County, Pennsylvania</p>
+  <header class="site-banner">
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <img src="images/logo.png" alt="Rockbridge Farm logo" class="logo">
+      <h1>Rockbridge Farm</h1>
+      <p class="tagline">York County, Pennsylvania</p>
+    </div>
+    <nav class="banner-nav">
+      <ul>
+        <li><a href="#bwm">Black Welsh Mountain Sheep</a></li>
+        <li><a href="#romney">Romney Sheep</a></li>
+        <li><a href="#boergoats">Boer Goats</a></li>
+        <li><a href="products.html#fleeces">Fleeces</a></li>
+        <li><a href="products.html#yarn">Yarn</a></li>
+        <li><a href="products.html#blankets">Blankets</a></li>
+      </ul>
+    </nav>
   </header>
-
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="sheep.html" class="active">Our Sheep</a></li>
-      <li><a href="products.html">Products</a></li>
-    </ul>
-  </nav>
 
   <main class="content">
 
-    <h2>Our Sheep</h2>
+    <h2>Our Animals</h2>
 
-    <p>Rockbridge Farm is home to Black Welsh Mountain sheep and Romney sheep. Our flocks
-    are raised humanely, free of hormones, and full of natural goodness.</p>
+    <p>Rockbridge Farm is home to Black Welsh Mountain sheep, Romney sheep, and Boer Goats.
+    Our animals are raised humanely, free of hormones, and full of natural goodness.</p>
 
     <!-- Black Welsh Mountain Sheep -->
-    <div class="breed-section with-float clearfix">
+    <div id="bwm" class="breed-section with-float clearfix">
       <h3>Black Welsh Mountain Sheep</h3>
-      <img src="images/black-welsh-mountain.svg" alt="Black Welsh Mountain sheep at Rockbridge Farm" class="breed-image" style="height: 260px;">
+      <img src="images/bwm-flock.jpg" alt="Black Welsh Mountain sheep at Rockbridge Farm" class="breed-image">
       <p>Our Black Welsh Mountain flock is one of only about fifty registered flocks in
       the country, and we are fortunate to have recently secured a new bloodline directly
       from the UK.</p>
@@ -49,15 +55,25 @@
     </div>
 
     <!-- Romney Sheep -->
-    <div class="breed-section with-float clearfix">
+    <div id="romney" class="breed-section clearfix">
       <h3>Romney Sheep</h3>
-      <img src="images/romney.svg" alt="Romney sheep at Rockbridge Farm" class="breed-image" style="height: 260px;">
       <p>The Romney is a long-wool breed well known for its heavy and thick fleece. Traced
       back to Kent, England, the breed has adapted to varied conditions, remaining healthy
       and productive across different climates.</p>
       <p>The Romney is often described as a dual-purpose breed, producing both meat and
       wool. The muscular lambs provide good meat, and the mature sheep produce a fleece that
       is easy to spin &mdash; making it a favorite among hand spinners and fiber artists.</p>
+    </div>
+
+    <!-- Boer Goats -->
+    <div id="boergoats" class="breed-section clearfix">
+      <h3>Boer Goats</h3>
+      <p>Rockbridge Farm is also home to Boer Goats. The Boer is a breed developed in
+      South Africa for meat production, known for its rapid growth rate, excellent
+      carcass quality, and docile temperament.</p>
+      <p>Boer Goats are hardy, adaptable animals that thrive in a variety of climates
+      and conditions. They are excellent foragers and do well on pasture, making them
+      a natural fit for the rolling hills of York County.</p>
     </div>
 
     <div class="external-links">
