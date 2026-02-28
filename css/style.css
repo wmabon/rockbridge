@@ -1,0 +1,279 @@
+/* Rockbridge Farm - Main Stylesheet */
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #3a3a2a;
+  background-color: #faf8f0;
+  line-height: 1.7;
+}
+
+a {
+  color: #5a7a3a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3a5a1a;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Header */
+.site-header {
+  background-color: #3a5a1a;
+  color: #faf8f0;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 4px solid #8b7355;
+}
+
+.site-header h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.25rem;
+}
+
+.site-header .tagline {
+  font-style: italic;
+  font-size: 1rem;
+  color: #c8d8b0;
+}
+
+/* Navigation */
+nav {
+  background-color: #4a6a2a;
+  text-align: center;
+  padding: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: #faf8f0;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  transition: background-color 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #3a5a1a;
+  text-decoration: none;
+}
+
+/* Main Content */
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  color: #3a5a1a;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #c8d8b0;
+  padding-bottom: 0.5rem;
+}
+
+.content h3 {
+  font-size: 1.3rem;
+  color: #5a7a3a;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+/* Hero image area */
+.hero-image {
+  width: 100%;
+  height: 300px;
+  background-color: #c8d8b0;
+  background-image: linear-gradient(135deg, #a8c890 25%, #c8d8b0 50%, #d8e8c0 75%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image .placeholder-text {
+  color: #3a5a1a;
+  font-style: italic;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Image placeholders */
+.image-placeholder {
+  background-color: #e8e0d0;
+  background-image: linear-gradient(135deg, #d8d0c0 25%, #e8e0d0 50%, #f0e8d8 75%);
+  border: 1px solid #c8c0b0;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8b7355;
+  font-style: italic;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Sheep breed sections */
+.breed-section {
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+}
+
+.breed-section .breed-image {
+  width: 100%;
+  max-width: 400px;
+  height: 280px;
+  margin: 0 auto 1rem;
+}
+
+.breed-section.with-float .breed-image {
+  float: right;
+  margin: 0 0 1rem 1.5rem;
+  max-width: 350px;
+}
+
+/* Products grid */
+.products-list {
+  list-style: none;
+  padding: 0;
+}
+
+.products-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0d8c8;
+  font-size: 1.05rem;
+}
+
+.products-list li:last-child {
+  border-bottom: none;
+}
+
+.products-list li::before {
+  content: "\2022";
+  color: #5a7a3a;
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+
+/* Contact info */
+.contact-info {
+  background-color: #f0ead8;
+  border: 1px solid #d8d0b8;
+  border-radius: 4px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info strong {
+  color: #3a5a1a;
+}
+
+/* External links */
+.external-links {
+  margin-top: 1.5rem;
+}
+
+.external-links a {
+  display: inline-block;
+  background-color: #5a7a3a;
+  color: #faf8f0;
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px;
+  margin-right: 0.75rem;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.external-links a:hover {
+  background-color: #3a5a1a;
+  text-decoration: none;
+  color: #faf8f0;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #3a5a1a;
+  color: #c8d8b0;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  border-top: 4px solid #8b7355;
+}
+
+.site-footer a {
+  color: #e8e0d0;
+}
+
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .site-header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li a {
+    padding: 0.6rem 1rem;
+  }
+
+  .content {
+    padding: 1.5rem 1rem;
+  }
+
+  .breed-section.with-float .breed-image {
+    float: none;
+    margin: 0 auto 1rem;
+    max-width: 100%;
+  }
+}
