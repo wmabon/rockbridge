@@ -1,0 +1,325 @@
+/* Rockbridge Farm - Main Stylesheet */
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #3a3a2a;
+  background-color: #faf8f0;
+  line-height: 1.7;
+}
+
+a {
+  color: #5a7a3a;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3a5a1a;
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Banner Header — matches original rockbridgefarm.com design */
+.site-banner {
+  position: relative;
+  width: 100%;
+  min-height: 340px;
+  background-color: #4a6a3a;
+  background-image: url('../images/header-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-banner .banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 50, 20, 0.3);
+}
+
+.site-banner .banner-content {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.site-banner .logo {
+  width: 80px;
+  height: auto;
+  margin: 0 auto 0.75rem;
+  filter: drop-shadow(1px 1px 3px rgba(0,0,0,0.4));
+}
+
+.site-banner h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  color: #fff;
+  letter-spacing: 0.12em;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.25rem;
+}
+
+.site-banner .tagline {
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #e0e8d0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Banner Navigation — inline links separated by middots */
+.banner-nav {
+  position: relative;
+  z-index: 1;
+  background: rgba(40, 60, 25, 0.8);
+  width: 100%;
+  padding: 0.6rem 1rem;
+  text-align: center;
+}
+
+.banner-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.banner-nav li {
+  display: flex;
+  align-items: center;
+}
+
+.banner-nav li:not(:last-child)::after {
+  content: "\00b7";
+  color: #c8d8b0;
+  font-size: 1.4rem;
+  padding: 0 0.6rem;
+}
+
+.banner-nav a {
+  color: #f0f0e0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  padding: 0.25rem 0.1rem;
+  transition: color 0.2s;
+}
+
+.banner-nav a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Main Content */
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.content h2 {
+  font-size: 1.8rem;
+  color: #3a5a1a;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #c8d8b0;
+  padding-bottom: 0.5rem;
+}
+
+.content h3 {
+  font-size: 1.3rem;
+  color: #5a7a3a;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+/* Photo rows for homepage */
+.photo-row {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.photo-row .photo-item {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.photo-row .photo-item img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.full-photo {
+  margin: 1.5rem 0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.full-photo img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Animal/breed sections */
+.breed-section {
+  margin-bottom: 2.5rem;
+  overflow: hidden;
+}
+
+.breed-section .breed-image {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 4px;
+  margin: 0 auto 1rem;
+}
+
+.breed-section.with-float .breed-image {
+  float: right;
+  margin: 0.25rem 0 1rem 1.5rem;
+  max-width: 380px;
+}
+
+/* Products list */
+.products-list {
+  list-style: none;
+  padding: 0;
+}
+
+.products-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0d8c8;
+  font-size: 1.05rem;
+}
+
+.products-list li:last-child {
+  border-bottom: none;
+}
+
+.products-list li::before {
+  content: "\2022";
+  color: #5a7a3a;
+  font-weight: bold;
+  margin-right: 0.75rem;
+}
+
+/* Contact info box */
+.contact-info {
+  background-color: #f0ead8;
+  border: 1px solid #d8d0b8;
+  border-radius: 4px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+
+.contact-info strong {
+  color: #3a5a1a;
+}
+
+/* External link buttons */
+.external-links {
+  margin-top: 1.5rem;
+}
+
+.external-links a {
+  display: inline-block;
+  background-color: #5a7a3a;
+  color: #faf8f0;
+  padding: 0.5rem 1.25rem;
+  border-radius: 4px;
+  margin-right: 0.75rem;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.external-links a:hover {
+  background-color: #3a5a1a;
+  text-decoration: none;
+  color: #faf8f0;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #3a5a1a;
+  color: #c8d8b0;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  border-top: 4px solid #8b7355;
+}
+
+.site-footer a {
+  color: #e8e0d0;
+}
+
+/* Clearfix */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .site-banner {
+    min-height: 240px;
+  }
+
+  .site-banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner-nav a {
+    font-size: 0.78rem;
+  }
+
+  .banner-nav li:not(:last-child)::after {
+    padding: 0 0.25rem;
+  }
+
+  .content {
+    padding: 1.5rem 1rem;
+  }
+
+  .photo-row {
+    flex-direction: column;
+  }
+
+  .photo-row .photo-item img {
+    height: auto;
+  }
+
+  .breed-section.with-float .breed-image {
+    float: none;
+    margin: 0 auto 1rem;
+    max-width: 100%;
+  }
+}
